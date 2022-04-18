@@ -62,7 +62,7 @@ void main(void) //main function
     rd_adc = 0; //make RD = 0 to read the data from ADC0804
     value = P1; //copy ADC data
     convert_display(value); //function call to convert ADC data into temperature and display it on     16*2 lcd display
-    delay(1000); //interval between every cycles
+    
     rd_adc = 1; //make RD = 1 for the next cycle
 	
   }
