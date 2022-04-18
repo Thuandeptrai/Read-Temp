@@ -95,7 +95,7 @@ void convert_display(unsigned char value) {
   x2 = x2 + (0x30); //convert variable x2 to ascii by adding 0x30
   x3 = 0xDF; //ascii value of degree(°) symbol
 	TemptOpen = value;
-		if(TemptOpen == 39)
+		if(TemptOpen > 39)
 		{
 			IN1 = 1;
 			IN2 = 0;
