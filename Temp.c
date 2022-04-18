@@ -13,7 +13,7 @@ sbit wr_adc = P3 ^ 1; //Write(WR) pin of ADC0804
 sbit intr_adc = P3 ^ 2; //Interrupt(INTR) pin of ADC0804
 
 int TemptOpen = 0;
-
+int Firsttime = 0;
 void delay(unsigned int); //function for creating delay
 void cmdwrt(unsigned char); //function for sending commands to 16*2 lcd display
 void datawrt(unsigned char); //function for sending data to 16*2 lcd display
@@ -86,7 +86,11 @@ void datawrt(unsigned char y) {
 }
 void convert_display(unsigned char value) {
   unsigned char x1, x2, x3;
-
+	if (Firsttime == 0)
+	{
+		value = value + 1;
+		Firsttime++;
+	}
   cmdwrt(0xc6); //command to set the cursor to 6th position of 2nd line on 16*2 lcd
 
   x1 = (value / 10); //divide the value by 10 and store quotient in variable x1
