@@ -1,0 +1,20 @@
+slide 1/2 8051(5)
+slide 3 interrupt (3)
+(Vy, Duy Anh)
+
+slide 4 ADC0804(5)
+slide 5 LM35(3)
+slide 6 LD293 (2)
+(Minh,Son)
+
+
+slide 7: Flowchart(6)
+slide 8:Explain the circuit(TEMP) 
+(Thuan)
+
+slide 10:.....(LOCKINGSYS)
+slide 11:(6)
+(Thuan)
+
+
+
